@@ -1,5 +1,3 @@
-#Last Modified: 7/11/2019
-
 ### Generic Evil upgrades ###
 upgrade_unholy_statues = {
 	picture = GFX_upgrade_icon_stones
@@ -12,8 +10,8 @@ upgrade_unholy_statues = {
 		heating
 		is_plural
 	}
-	build_time = 24
-	gold_cost_flat = 450
+	build_time = 48
+	gold_cost_flat = 487
 	gold_cost_ticking = 1
 	local_modifier = {
 	}
@@ -31,13 +29,13 @@ upgrade_sanctuary_of_shadows = {
 	flags = {
 		is_singular
 	}
-	build_time = 24
-	gold_cost_flat = 400
+	build_time = 84
+	gold_cost_flat = 852
 	gold_cost_ticking = 1
 	local_modifier = {
 	}
 	owner_modifier = {
-		defensive_plot_power_modifier = 0.05
+		cruel_opinion = 5
 
 		text_effect_mind_control_chance = 1
 	}
@@ -52,11 +50,11 @@ upgrade_black_walls = {
 	flags = {
 		is_plural
 	}
-	build_time = 36
-	gold_cost_flat = 500
+	build_time = 48
+	gold_cost_flat = 487
 	gold_cost_ticking = 1
 	local_modifier = {
-		siege_defence = 0.1
+		siege_defence = 0.05
 	}
 	owner_modifier = {
 	}
@@ -70,13 +68,14 @@ upgrade_crimson_hall = {
 	flags = {
 		is_singular
 	}
-	build_time = 24
-	gold_cost_flat = 500
+	build_time = 48
+	gold_cost_flat = 487
 	gold_cost_ticking = 1
 	local_modifier = {
 	}
 	owner_modifier = {
-		siege_speed = 0.2
+		levy_size = 0.2
+		garrison_size = 0.1
 	}
 }
 
@@ -93,8 +92,8 @@ upgrade_plagueworks = {
 	flags = {
 		is_plural
 	}
-	build_time = 24
-	gold_cost_flat = 500
+	build_time = 72
+	gold_cost_flat = 731
 	gold_cost_ticking = 1
 	local_modifier = {
 	}
@@ -114,13 +113,13 @@ upgrade_nerubian_busts = {
 	flags = {
 		is_plural
 	}
-	build_time = 24
-	gold_cost_flat = 450
+	build_time = 48
+	gold_cost_flat = 487
 	gold_cost_ticking = 1
 	local_modifier = {
 	}
 	owner_modifier = {
-		plot_power_modifier = 0.05
+		plot_power_modifier = 0.1
 	}
 }
 upgrade_endless_corridors = {
@@ -133,11 +132,12 @@ upgrade_endless_corridors = {
 	flags = {
 		is_singular
 	}
-	build_time = 36
-	gold_cost_flat = 500
+	build_time = 45
+	gold_cost_flat = 457
 	gold_cost_ticking = 1
 	local_modifier = {
 		local_tax_modifier = 0.10
+		garrison_size = 0.20
 	}
 	owner_modifier = {
 	}
@@ -152,8 +152,8 @@ upgrade_construct_quarter = {
 	flags = {
 		is_singular
 	}
-	build_time = 40
-	gold_cost_flat = 470
+	build_time = 72
+	gold_cost_flat = 731
 	gold_cost_ticking = 1
 	local_modifier = {
 		pikemen = 60
@@ -175,8 +175,8 @@ upgrade_soul_extractor = {
 	flags = {
 		is_singular
 	}
-	build_time = 24
-	gold_cost_flat = 400
+	build_time = 72
+	gold_cost_flat = 731
 	gold_cost_ticking = 1
 	local_modifier = {
 	}
@@ -198,8 +198,8 @@ upgrade_demonic_machinery = {
 	flags = {
 		is_singular
 	}
-	build_time = 24
-	gold_cost_flat = 500
+	build_time = 69
+	gold_cost_flat = 700
 	gold_cost_ticking = 1
 	local_modifier = {
 		local_tax_modifier = 0.1
@@ -219,8 +219,8 @@ upgrade_fel_pool = {
 	flags = {
 		is_singular
 	}
-	build_time = 24
-	gold_cost_flat = 400
+	build_time = 102
+	gold_cost_flat = 1035
 	gold_cost_ticking = 1
 	local_modifier = {
 	}
@@ -240,8 +240,8 @@ upgrade_moarg_workshops = {
 	flags = {
 		is_plural
 	}
-	build_time = 40
-	gold_cost_flat = 470
+	build_time = 84
+	gold_cost_flat = 852
 	gold_cost_ticking = 1
 	local_modifier = {
 		light_infantry = 20
@@ -265,8 +265,8 @@ upgrade_twilight_altar = {
 	flags = {
 		is_singular
 	}
-	build_time = 24
-	gold_cost_flat = 400
+	build_time = 102
+	gold_cost_flat = 1035
 	gold_cost_ticking = 1
 	local_modifier = {
 	}
@@ -288,13 +288,13 @@ upgrade_old_gods_relics = {
 	flags = {
 		is_plural
 	}
-	build_time = 24
-	gold_cost_flat = 500
+	build_time = 72
+	gold_cost_flat = 731
 	gold_cost_ticking = 1
 	local_modifier = {
 	}
 	owner_modifier = {
-		monthly_character_piety = 0.25
+		monthly_character_piety = 0.15
 	}
 }
 upgrade_black_obelisks = {
@@ -309,8 +309,8 @@ upgrade_black_obelisks = {
 	flags = {
 		is_plural
 	}
-	build_time = 24
-	gold_cost_flat = 500
+	build_time = 60
+	gold_cost_flat = 609
 	gold_cost_ticking = 1
 	local_modifier = {
 	}
@@ -328,12 +328,280 @@ upgrade_condemned_halls = {
 	flags = {
 		is_plural
 	}
-	build_time = 40
-	gold_cost_flat = 470
+	build_time = 48
+	gold_cost_flat = 593
 	gold_cost_ticking = 1
 	local_modifier = {
-		heavy_infantry = 80
+		heavy_infantry = 45
+		light_infantry = 20
+	}
+	owner_modifier = {
+	}
+}
+
+
+#Titanic Upgrades
+upgrade_sentries_titanic = { #Arcane Powered Sentries
+	picture = GFX_upgrade_icon_sentries_titanic
+	potential = {
+	}
+	allow = {
+	}
+	active = {
+	}
+
+	flags = {
+		is_plural
+		is_titanic
+	}
+	build_time = 63
+	gold_cost_flat = 639
+	gold_cost_ticking = 1
+	local_modifier = {
+		local_revolt_risk = -0.03
+		levy_size = 0.05
+		garrison_size = 0.05
+	}
+	owner_modifier = {
+	}
+}
+upgrade_teleportation_titanic = { #Teleportation Pads
+	picture = GFX_upgrade_icon_pads_titanic
+	potential = {
+	}
+	allow = {
+	}
+	active = {
+	}
+
+	flags = {
+		is_plural
+		is_titanic
+	}
+	build_time = 52
+	gold_cost_flat = 524
+	gold_cost_ticking = 1
+	local_modifier = {
+		local_movement_speed = 0.15
+	}
+	owner_modifier = {
+		levy_reinforce_rate = 0.05
+	}
+}
+upgrade_planetarium_titanic = { #Galactic Planetarium
+	picture = GFX_upgrade_icon_planets_titanic
+	potential = {
+	}
+	allow = {
+	}
+	active = {
+	}
+
+	flags = {
+		is_titanic
+	}
+	build_time = 51
+	gold_cost_flat = 517
+	gold_cost_ticking = 1
+	local_modifier = {
+		tech_growth_modifier = 0.25
+	}
+	owner_modifier = {
+		learning = 1
+	}
+}
+upgrade_discs_titanic = { #Disc Library
+	picture = GFX_upgrade_icon_discs_titanic
+	potential = {
+	}
+	allow = {
+	}
+	active = {
+	}
+
+	flags = {
+		is_plural
+		is_titanic
+	}
+	build_time = 81
+	gold_cost_flat = 822
+	gold_cost_ticking = 1
+	local_modifier = {
+		economy_techpoints = 0.03
+		military_techpoints = 0.03
+		culture_techpoints = 0.03
+	}
+	owner_modifier = {
+		learning = 1
+	}
+}
+upgrade_azeroth_titanic = { #Azeroth Projection
+	picture = GFX_upgrade_icon_azeroth_titanic
+	potential = {
+	}
+	allow = { FROMFROM = { has_wonder_upgrade = upgrade_planetarium_titanic } }
+	active = { FROMFROM = { has_wonder_upgrade = upgrade_planetarium_titanic } }
+
+	flags = {
+		is_titanic
+	}
+	build_time = 72
+	gold_cost_flat = 731
+	gold_cost_ticking = 1
+	local_modifier = {
+	}
+	owner_modifier = {
+		global_tax_modifier = 0.025
+		army_reinforce_rate = 0.05
+		land_organisation = 0.05
+	}
+}
+upgrade_holograms_titanic = { #Holograms
+	picture = GFX_upgrade_icon_holograms_titanic
+	potential = {
+	}
+	allow = {
+	}
+	active = {
+	}
+
+	flags = {
+		is_titanic
+	}
+	build_time = 78
+	gold_cost_flat = 791
+	gold_cost_ticking = 1.5
+	local_modifier = {
+	}
+	owner_modifier = {
+		monthly_character_prestige = 0.25
+		dynasty_opinion = 3
+	}
+}
+upgrade_titanforged_titanic = { #Titanforged Workers
+	picture = GFX_upgrade_icon_keepers_titanic
+	potential = {
+	}
+	allow = {
+	}
+	active = {
+	}
+
+	flags = {
+		is_titanic
+		is_plural
+	}
+	build_time = 36
+	gold_cost_flat = 365
+	gold_cost_ticking = 1
+	local_modifier = {
+		local_build_cost_modifier = -0.10
+		local_build_time_modifier = -0.10
+	}
+	owner_modifier = {
+	}
+}
+upgrade_architecture_titanic = { #Restoration
+	picture = GFX_upgrade_icon_architecture_titanic
+	potential = {
+	}
+	allow = {
+	}
+	active = {
+	}
+
+	flags = {
+		is_titanic
+	}
+	build_time = 114
+	gold_cost_flat = 1157
+	gold_cost_ticking = 1
+	local_modifier = {
+		siege_defence = 0.10
+		fort_level = 0.50
+	}
+	owner_modifier = {
+		monthly_character_prestige = 0.25
+	}
+}
+
+#Druidic Upgrades
+upgrade_claw_druids = { #Druids of the Claw
+	picture = GFX_upgrade_icon_claw_druids
+	potential = { }
+	allow = { FROMFROMFROM = { religion_group = druidism_group } }
+	active = { FROMFROMFROM = { religion_group = druidism_group } }
+
+	flags = {
+		is_druidic
+	}
+	build_time = 70
+	gold_cost_flat = 714
+	gold_cost_ticking = 1
+	local_modifier = {
+		heavy_infantry = 20
+		animals = 40
+		heavy_infantry_defensive = 0.05
+	}
+	owner_modifier = {
+	}
+}
+upgrade_moon_druids = { #Druids of the Moon
+	picture = GFX_upgrade_icon_moon_druids
+	potential = { }
+	allow = { FROMFROMFROM = { religion_group = druidism_group } }
+	active = { FROMFROMFROM = { religion_group = druidism_group } }
+
+	flags = {
+		is_druidic
+	}
+	build_time = 85
+	gold_cost_flat = 864
+	gold_cost_ticking = 1
+	local_modifier = {
 		light_infantry = 30
+		animals = 30
+		light_infantry_offensive = 0.05
+	}
+	owner_modifier = {
+	}
+}
+upgrade_talon_druids = { #Druids of the Talon
+	picture = GFX_upgrade_icon_talon_druids
+	potential = { }
+	allow = { FROMFROMFROM = { religion_group = druidism_group } }
+	active = { FROMFROMFROM = { religion_group = druidism_group } }
+
+	flags = {
+		is_druidic
+	}
+	build_time = 77
+	gold_cost_flat = 783
+	gold_cost_ticking = 1
+	local_modifier = {
+		knights = 15
+		animals = 25
+	}
+	owner_modifier = {
+		defensive_plot_power_modifier = 0.05
+	}
+}
+upgrade_cenarion = { #Cenarion Circle Hold
+	picture = GFX_upgrade_icon_cenarion_circle
+	potential = { }
+	allow = { FROMFROMFROM = { religion_group = druidism_group } }
+	active = { FROMFROMFROM = { religion_group = druidism_group } }
+
+	flags = {
+		is_druidic
+	}
+	build_time = 76
+	gold_cost_flat = 767
+	gold_cost_ticking = 1
+	local_modifier = {
+		heavy_infantry = 20
+		animals = 50
+		animals_offensive = 0.10
 	}
 	owner_modifier = {
 	}

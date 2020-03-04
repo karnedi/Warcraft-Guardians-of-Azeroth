@@ -1,1 +1,119 @@
-#Last Modified: 7/11/2019
+# Upgrades in this file are for UNIQUE upgrades that apply to
+# only ONE wonder, whether or not they are manually constructed
+# or constructed through effects.
+
+#Wyrmrest Temple
+upgrade_ruby_sanctum = {
+	picture = GFX_upgrade_icon_ruby_sanctum
+
+	potential = { }
+	allow = { FROMFROM = { has_wonder_upgrade = upgrade_aspects_chamber } }
+	active = { FROMFROM = { has_wonder_upgrade = upgrade_aspects_chamber } }
+
+	flags = {
+	}
+	build_time = 60
+	gold_cost_flat = 609
+	gold_cost_ticking = 1
+	local_modifier = {
+	}
+	owner_modifier = {
+		health = 0.25
+	}
+}
+upgrade_aspects_chamber = {
+	picture = GFX_upgrade_icon_aspects_chamber
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+	}
+	build_time = 103
+	gold_cost_flat = 1047
+	gold_cost_ticking = 2
+	local_modifier = {
+		fort_level = 0.20
+		siege_defence = 0.10
+	}
+	owner_modifier = {
+	}
+}
+upgrade_path_of_the_titans = {
+	picture = GFX_upgrade_icon_path_of_the_titans
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+	}
+	build_time = 38
+	gold_cost_flat = 390
+	gold_cost_ticking = 1
+	local_modifier = {
+		local_movement_speed = 0.1
+		supply_limit = 0.10
+	}
+	owner_modifier = {
+	}
+}
+
+#Halls of Origination
+upgrade_chamber_of_prophecy = {
+	picture = GFX_upgrade_icon_chamber_of_prophecy
+
+	potential = { }
+	allow = { }
+	active = { }
+
+	flags = {
+	}
+	build_time = 45
+	gold_cost_flat = 457
+	gold_cost_ticking = 1
+	local_modifier = {
+		local_tax_modifier = 0.10
+	}
+	owner_modifier = {
+	}
+}
+upgrade_vault_of_lights = {
+	picture = GFX_upgrade_icon_vault_of_lights
+
+	potential = { }
+	allow = { FROMFROM = { has_wonder_upgrade = upgrade_chamber_of_prophecy } }
+	active = { FROMFROM = { has_wonder_upgrade = upgrade_chamber_of_prophecy } }
+
+	flags = {
+	}
+	build_time = 204
+	gold_cost_flat = 2070
+	gold_cost_ticking = 1
+	local_modifier = {
+		siege_defence = 0.1
+		disease_defense = 0.1
+	}
+	owner_modifier = {
+	}
+}
+upgrade_seat_of_the_keepers = {
+	picture = GFX_upgrade_icon_seat_of_the_keepers
+
+	potential = { }
+	allow = { FROMFROM = { has_wonder_upgrade = upgrade_vault_of_lights } }
+	active = { FROMFROM = { has_wonder_upgrade = upgrade_vault_of_lights } }
+
+	flags = {
+	}
+	build_time = 66
+	gold_cost_flat = 670
+	gold_cost_ticking = 1
+	local_modifier = {
+		levy_size = 0.15
+		levy_reinforce_rate = 0.10
+	}
+	owner_modifier = {
+	}
+}
